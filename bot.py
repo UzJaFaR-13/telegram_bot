@@ -1,9 +1,9 @@
 import telebot
 from telebot.types import ReplyKeyboardMarkup, KeyboardButton
-import os
 
-API_TOKEN = os.getenv("BOT_TOKEN")
-ADMIN_CHAT_ID = os.getenv("ADMIN_CHAT_ID") 
+# Bu yerga o'z token va admin ID'ingizni yozing
+API_TOKEN = "5142442771:AAH1wjijP3DByhvtcMOt7vc9squKwyTHguQ"  # <-- TOKEN bu yerda
+ADMIN_CHAT_ID = '@qwerty123098675'          # <-- ADMIN ID bu yerda (raqamli bo'lishi shart)
 
 bot = telebot.TeleBot(API_TOKEN)
 
@@ -112,7 +112,7 @@ def text_handler(message):
         )
 
 # Admin reply qilsa, foydalanuvchiga yuboriladi
-@bot.message_handler(func=lambda msg: msg.reply_to_message and str(msg.chat.id) == ADMIN_CHAT_ID)
+@bot.message_handler(func=lambda msg: msg.reply_to_message and str(msg.chat.id) == str(ADMIN_CHAT_ID))
 def reply_handler(message):
     try:
         original = message.reply_to_message.text
