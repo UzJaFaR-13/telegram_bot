@@ -3,7 +3,7 @@ from telebot.types import ReplyKeyboardMarkup, KeyboardButton
 import os
 
 API_TOKEN = os.getenv("BOT_TOKEN")
-ADMIN_CHAT_ID = os.getenv("ADMIN_CHAT_ID")  # Masalan: "123456789"
+ADMIN_CHAT_ID = os.getenv("ADMIN_CHAT_ID") 
 
 bot = telebot.TeleBot(API_TOKEN)
 
