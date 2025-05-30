@@ -4,9 +4,9 @@ __pycache__/
 *.pyo
 
 # Virtual environments
-venv/
-env/
-.venv/
+# venv/
+# env/
+# .venv/
 # .env/
 
 # VS Code settings (agar VS Code ishlatilsa)
@@ -23,7 +23,7 @@ Thumbs.db
 *.log
 
 # dotenv config (tokenlar va maxfiy sozlamalar)
-.env
+# .env
 
 # Docker build artifacts (agar ishlatilsa)
 *.pid
