@@ -1,5 +1,3 @@
-version: '3'
-
 services:
   uzjafar_bot:
     build: .
