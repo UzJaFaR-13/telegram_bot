@@ -1,7 +1,0 @@
-services:
-  uzjafar_bot:
-    build: .
-    container_name: uzjafar-bot
-    restart: always
-    env_file:
-      - .env
